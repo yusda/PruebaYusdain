@@ -1,14 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { TablasComponent } from './tablas/tablas.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    TablasComponent,
+  
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
